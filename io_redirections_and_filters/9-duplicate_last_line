@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1 iacta
+for i in {1..2}; do tail -n 1 iacta; done
