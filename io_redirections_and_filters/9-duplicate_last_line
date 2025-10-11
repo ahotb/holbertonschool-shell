@@ -1,2 +1,4 @@
 #!/bin/bash
-tail -n 1 iacta | tail -n 1 iacta
+if [ ! -f iacta ]; then
+  exit 0
+fi
