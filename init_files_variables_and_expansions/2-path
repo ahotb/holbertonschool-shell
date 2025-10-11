@@ -1,2 +1,2 @@
 #!/bin/bash
-PTHH="PATH":/action
+echo PTHH="PATH":/action
