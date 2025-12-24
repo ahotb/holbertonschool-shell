@@ -1,2 +1,5 @@
 #!/bin/bash
-echo "shtbeolhc"
+num1=$(echo "$WATER" | tr 'water' '01234')
+num2=$(echo "$STIR" | tr 'stir.' '01234')
+sum=$(( 5#$num1 + 5#$num2 ))
+printf "%o\n" "$sum" | tr '01234567' 'bestchol'
