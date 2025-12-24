@@ -1,2 +1,4 @@
 #!/bin/bash
-find . -empty -printf '%f\n'
+while IFS= read -r -d '' path; do
+    echo "${path##*/}"
+done < <(find . -empty -print0)
